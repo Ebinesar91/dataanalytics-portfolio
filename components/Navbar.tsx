@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, Menu, X, ArrowUpRight } from "lucide-react";
+import { FileText, Menu, X } from "lucide-react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 
@@ -85,7 +85,10 @@ export const Navbar: React.FC = () => {
             <LinkedinIcon className="w-4 h-4" />
           </a>
           <a
-            href="#resume"
+            href="/resume.pdf"
+            download="Ebinesar_A_Data_Analytics_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-cyan-950 bg-cyan-400 hover:bg-cyan-300 rounded-lg transition-all shadow-sm font-sans"
           >
             <FileText className="w-3.5 h-3.5" />
@@ -143,7 +146,10 @@ export const Navbar: React.FC = () => {
                   </a>
                 </div>
                 <a
-                  href="#resume"
+                  href="/resume.pdf"
+                  download="Ebinesar_A_Data_Analytics_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-cyan-950 bg-cyan-400 rounded-lg"
                 >

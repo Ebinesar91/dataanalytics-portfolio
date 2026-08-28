@@ -59,7 +59,10 @@ export const Hero: React.FC = () => {
               </a>
 
               <a
-                href="#resume"
+                href="/resume.pdf"
+                download="Ebinesar_A_Data_Analytics_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 rounded-xl transition-all hover:border-slate-600 font-sans"
               >
                 <FileText className="w-4 h-4 text-cyan-400" />
